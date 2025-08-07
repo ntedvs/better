@@ -3,6 +3,7 @@ import { Metadata } from "next"
 import { Inter } from "next/font/google"
 import Link from "next/link"
 import { ReactNode } from "react"
+import { MobileNav } from "./mobile-nav"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -21,7 +22,8 @@ export default function Layout({ children }: { children: ReactNode }) {
             Better<span className="text-primary">.</span>
           </Link>
 
-          <div className="space-x-6">
+          {/* Desktop Navigation */}
+          <nav className="hidden space-x-6 md:flex">
             <Link href="/#about">About</Link>
             <Link href="/menu">Menu</Link>
             <Link href="/#reviews">Reviews</Link>
@@ -32,13 +34,16 @@ export default function Layout({ children }: { children: ReactNode }) {
             >
               Order
             </Link>
-          </div>
+          </nav>
+
+          {/* Mobile Navigation */}
+          <MobileNav />
         </header>
 
         <main className="grow">{children}</main>
 
-        <footer className="mt-12 flex justify-between text-foreground/60">
-          <div className="flex gap-6">
+        <footer className="mt-12 flex flex-col justify-between text-center text-foreground/60 md:flex-row">
+          <div className="flex justify-center gap-6">
             <p>(757) 894-8153</p>
             <p>foodtruck.better@gmail.com</p>
           </div>

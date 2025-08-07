@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Home() {
   return (
     <>
-      <div className="flex h-[100vh] items-center">
+      <div className="flex min-h-[100vh] items-center">
         <div className="mt-20 flex w-full flex-col items-center justify-between gap-8 md:flex-row">
           <div>
             <h1 className="mb-6 text-5xl font-bold">
@@ -14,9 +14,10 @@ export default function Home() {
             </h1>
 
             <p className="max-w-[35rem] text-lg">
-              Better brings chef-driven cuisine to Chincoteague, Virginia. Our
-              food truck specializes in seasonal, fresh ingredients crafted into
-              exceptional meals that celebrate local flavors.
+              <span className="font-semibold">Better</span> brings chef-driven
+              cuisine to Chincoteague, Virginia. Our food truck specializes in
+              seasonal, fresh ingredients crafted into exceptional meals that
+              celebrate local flavors.
             </p>
           </div>
 
@@ -24,7 +25,7 @@ export default function Home() {
             <Link
               href="https://app.getyomojo.com/order?vendor=OTfBfKmkD7"
               target="_blank"
-              className="flex items-center gap-2 rounded-full border-2 px-8 py-4 whitespace-nowrap"
+              className="flex items-center gap-2 rounded-full border-2 px-4 py-2 whitespace-nowrap md:px-8 md:py-4"
             >
               <ReceiptText className="size-5" />
               Order Online
@@ -32,7 +33,7 @@ export default function Home() {
 
             <Link
               href="/menu"
-              className="flex items-center gap-2 rounded-full bg-primary px-8 py-4 whitespace-nowrap text-white"
+              className="flex items-center gap-2 rounded-full bg-primary px-4 py-2 whitespace-nowrap text-white md:px-8 md:py-4"
             >
               <Utensils className="size-5" />
               View Menu
@@ -41,9 +42,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-[100vh]">
+      <div className="min-h-[100vh]">
         <h2 id="about" className="text-center text-4xl font-semibold">
-          Meet the Team
+          Meet Better
         </h2>
         <p className="mx-auto mt-4 mb-12 max-w-3xl text-center text-foreground/80">
           Discover the passion and tradition behind every dish. Our
@@ -72,7 +73,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-[100vh]">
+      <div className="mt-20 min-h-[100vh]">
         <div className="mb-20 flex justify-between">
           <h2 className="text-6xl">Signature Dishes</h2>
 
@@ -134,7 +135,7 @@ export default function Home() {
 
         <div className="relative">
           <div className="grid gap-4 md:grid-cols-3">
-            <div className="mt-4 space-y-4">
+            <div className="space-y-4 md:mt-4">
               <Review
                 name="Sarah Mitchell"
                 body="The Brussels Sprouts from Better are absolutely incredible! I never thought I'd say that about a vegetable, but Chef Mike has completely changed my mind. The crispy texture and amazing seasoning make them addictive. This food truck is redefining what street food can be!"
@@ -164,7 +165,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="mt-8 space-y-4">
+            <div className="space-y-4 md:mt-8">
               <Review
                 name="James Wilson"
                 body="Fresh, local ingredients and incredible creativity. The Potato Rocket is unlike anything I've had - crispy, flavorful, and filling. Better proves that food trucks can serve restaurant-quality meals with heart and soul."
@@ -193,7 +194,7 @@ export default function Home() {
           Chincoteague, VA
         </p>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid gap-4 md:grid-cols-2">
           <div className="rounded-lg bg-[#f7f5f0] p-4">
             <div
               className={
@@ -263,7 +264,7 @@ export default function Home() {
           <div className="size-full rounded-lg bg-[#f7f5f0] p-4">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.9749179415417!2d-75.36283432415149!3d37.93101640314452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b96984a9a222dd%3A0x2ec49d0fe693a16f!2sBetter.!5e0!3m2!1sen!2sus!4v1754547100151!5m2!1sen!2sus"
-              className="size-full"
+              className="size-full min-h-80"
             />
           </div>
         </div>
