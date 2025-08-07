@@ -129,7 +129,7 @@ export default function Home() {
         </h2>
         <p className="mx-auto mt-4 mb-12 max-w-3xl text-center text-foreground/80">
           Discover why our Chincoteague community has fallen in love with
-          Better's fresh, creative cuisine and our warm hospitality.
+          Better&apos;s fresh, creative cuisine and our warm hospitality.
         </p>
 
         <div className="relative">
