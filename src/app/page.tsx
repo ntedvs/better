@@ -74,7 +74,7 @@ export default function Home() {
       </div>
 
       <div className="mt-20 min-h-[100vh]">
-        <div className="mb-20 flex justify-between">
+        <div className="mb-20 flex flex-col justify-between gap-4 md:flex-row">
           <h2 className="text-6xl">Signature Dishes</h2>
 
           <div>
@@ -124,7 +124,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
+      <div className="mt-20">
         <h2 id="reviews" className="text-center text-4xl font-semibold">
           What Our Customers Say
         </h2>
